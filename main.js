@@ -152,7 +152,7 @@ function loadPhotos(count) {
         loadedImages.push(i); // Mark image as loaded
 
         const img = new Image();
-        img.src = `Images/${image.image}`;
+        img.src = `images/${image.image}`;
         img.alt = `${image.short_description}`;
         img.style.width = '100%';
         img.style.borderRadius = '8px';
