@@ -40,7 +40,7 @@ let loadedImages = []; // Store indices of loaded images
 // Function to fetch image data from JSON
 async function fetchImageData() {
     try {
-        const response = await fetch('https://beyondthelens.github.io/images.json');
+        const response = await fetch('images.json');
         const data = await response.json();
         imageData = data.images;
     } catch (error) {
