@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="http://127.0.0.1:3000">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond the lens - Photography Blog</title>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Segoe+UI&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3b413b;
+            --secondary-color: #F1FFFA;
+            --accent-color: #7a8879;
+            --text-color: #f0f0f0;
+            --bg-color: #121212;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --shadow-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .dark-mode {
+            --primary-color: #e0e0e0;
+            --secondary-color: #464E47;
+            --accent-color: #99aa9b;
+            --text-color: #e0e0e0;
+            --bg-color: #39413a;
+            --card-bg: #151815;
+            --shadow-color: rgba(0, 0, 0, 0.2);
+        }
+
+        /* Light Mode Styles */
+        .light-mode {
+            --primary-color: #464E47;
+            --secondary-color: rgba(245, 245, 245, 0.8);
+            --accent-color: #464E47;
+            --text-color: #464E47;
+            --bg-color: #fffef1;
+            --card-bg: rgba(255, 255, 241, 0.397);
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .background-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+            background: linear-gradient(45deg, #2a2a2a, #1a1a1a);
+            animation: gradientBG 20s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        header {
+            background: var(--card-bg);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px); /* For Safari */
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: var(--text-color);
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 100px auto 2rem;
+            padding: 0 1rem;
+        }
+
+        .filters {
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .filter-btn {
+            padding: 0.8rem 1.5rem;
+            background: var(--card-bg);
+            border: none;
+            border-radius: 25px;
+            color: var(--text-color);
+            cursor: pointer;
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s ease;
+            margin: 0.2rem;
+        }
+
+        .filter-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .search-bar {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            border-radius: 25px;
+            background: var(--card-bg);
+            color: var(--text-color);
+            backdrop-filter: blur(5px);
+        }
+
+        .gallery {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .gallery-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            background: var(--card-bg);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 20px var(--shadow-color);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .gallery-item-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+            padding: 1rem;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-item-overlay {
+            opacity: 1;
+        }
+
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90vh;
+            border-radius: 8px;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .load-more-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .load-more-btn {
+            padding: 0.8rem 2rem;
+            background: var(--accent-color);
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .load-more-btn:hover {
+            background: #4c554b;
+        }
+
+        footer {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            color: var(--text-color);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-section {
+            flex: 1 0 250px;
+            margin-bottom: 4rem; /* Increased margin */
+        }
+
+        .footer-section h3 {
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+        }
+
+        .footer-section p {
+            line-height: 1.8;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-links a {
+            color: var(--text-color);
+            font-size: 1.8rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 0px;
+            flex-wrap: wrap;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            gap: 0px;
+            border-radius: 4px 0px 0px 4px;
+            margin-right: 0px;
+            background: var(--bg-color);
+            color: var(--text-color);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .newsletter-form button {
+            padding: 1rem 2rem;
+            background: var(--accent-color);
+            border: none;
+            border-radius: 0px 4px 4px 0px;
+            color: white;
+            cursor: pointer;
+            margin-left: 0px;
+            transition: background 0.3s ease;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .newsletter-form button:hover {
+            background: #4c554b;
+        }
+
+        @media (max-width: 1200px) {
+            .gallery {
+                gap: 0.8rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .gallery {
+                gap: 0.6rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                flex-direction: column;
+            }
+
+            .gallery-column {
+                width: 100%;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-section {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .filters {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search-bar {
+                margin-bottom: 1rem;
+            }
+
+            .gallery {
+                flex-direction: column;
+            }
+
+            .gallery-column {
+                width: 100%;
+            }
+        }
+
+        .text-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 3000;
+        }
+
+        .text-animation-content {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            animation: fadeInOut 2s ease infinite;
+        }
+
+        @keyframes fadeInOut {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-animation"></div>
+
+    <div class="text-animation">
+        <div class="text-animation-content">Beyond the lens</div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">Beyond the lens</div>
+            <div class="nav-links">
+                <a href="http://127.0.0.1:3000/index.html">Home</a>
+                <a href="https://example.com/gallery">Gallery</a>
+                <a href="https://example.com/blog">Blog</a>
+                <a href="http://127.0.0.1:3000/about.html">About</a>
+                <a href="https://example.com/contact">Contact</a>
+            </div>
+            <button class="theme-toggle" aria-label="Toggle Dark Mode">
+                <i class="fas fa-sun"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="filters">
+            <input type="text" class="search-bar" placeholder="Search photos...">
+            <button class="filter-btn" data-category="all">All</button>
+            <button class="filter-btn" data-category="nature">Wild</button>
+            <button class="filter-btn" data-category="urban">Urban</button>
+            <button class="filter-btn" data-category="travel">Travel</button>
+            <button class="filter-btn" data-category="nature">Nature</button>
+            <button class="filter-btn" data-category="portrait">Portrait</button>
+            <button class="filter-btn" data-category="nature">Wallpaper</button>
+        </div>
+
+        <div class="gallery" data-aos="fade-up">
+            <!-- Gallery columns will be dynamically managed here -->
+        </div>
+
+        <div class="load-more-container">
+            <button class="load-more-btn">Load More</button>
+        </div>
+    </main>
+
+    <div class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img src="" alt="Enlarged photo">
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Beyond the lens</h3>
+                <p>Capturing moments, creating memories, and sharing stories through the lens of life.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://instagram.com/example" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com/example" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/example" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://pinterest.com/example" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form" action="https://example.com/subscribe" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Remove loading animation once content is loaded
+        window.addEventListener('load', () => {
+            document.querySelector('.text-animation').style.display = 'none';
+        });
+
+        // Theme toggle functionality
+        const themeToggle = document.querySelector('.theme-toggle');
+        let isDarkMode = false; // Track the current mode
+
+        themeToggle.addEventListener('click', () => {
+            isDarkMode = !isDarkMode; // Toggle the mode
+            document.body.classList.toggle('dark-mode');
+            document.body.classList.toggle('light-mode');
+
+            // Update the icon based on the current mode
+            if (isDarkMode) {
+                themeToggle.querySelector('i').classList.remove('fa-sun');
+                themeToggle.querySelector('i').classList.add('fa-moon');
+            } else {
+                themeToggle.querySelector('i').classList.remove('fa-moon');
+                themeToggle.querySelector('i').classList.add('fa-sun');
+            }
+        });
+
+        // Gallery data
+        const gallery = document.querySelector('.gallery');
+        const loadMoreBtn = document.querySelector('.load-more-btn');
+        let photoCount = 0;
+        const photosPerLoad = 25;
+        let imageData = []; // Store image data from JSON
+
+        // Function to fetch image data from JSON
+        async function fetchImageData() {
+            try {
+                const response = await fetch('images.json');
+                const data = await response.json();
+                imageData = data.images;
+            } catch (error) {
+                console.error('Error fetching image data:', error);
+            }
+        }
+
+        // Determine the number of columns based on window width
+        function getNumberOfColumns() {
+            const width = window.innerWidth;
+            if (width >= 1200) return 4;
+            if (width >= 992) return 3;
+            if (width >= 768) return 2;
+            return 1;
+        }
+
+        let numberOfColumns = getNumberOfColumns();
+        let columns = [];
+        let columnHeights = [];
+
+        // Initialize columns
+        function setupColumns() {
+            // Clear existing columns
+            gallery.innerHTML = '';
+            columns = [];
+            columnHeights = [];
+
+            numberOfColumns = getNumberOfColumns();
+
+            for (let i = 0; i < numberOfColumns; i++) {
+                const col = document.createElement('div');
+                col.className = 'gallery-column';
+                gallery.appendChild(col);
+                columns.push(col);
+                columnHeights.push(0);
+            }
+        }
+
+        // Adjust columns on window resize
+        window.addEventListener('resize', () => {
+            const newNumberOfColumns = getNumberOfColumns();
+            if (newNumberOfColumns !== numberOfColumns) {
+                numberOfColumns = newNumberOfColumns;
+                setupColumns();
+                // Reload photos to distribute correctly
+                loadPhotos(photoCount);
+            }
+        });
+
+        // Function to calculate keyword similarity between two images
+        function calculateSimilarity(image1, image2) {
+            const keywords1 = image1.keywords.split(' ');
+            const keywords2 = image2.keywords.split(' ');
+            let commonKeywords = 0;
+            keywords1.forEach(keyword => {
+                if (keywords2.includes(keyword)) {
+                    commonKeywords++;
+                }
+            });
+            return commonKeywords / (keywords1.length + keywords2.length - commonKeywords);
+        }
+
+        // Function to load photos
+        function loadPhotos(count) {
+            const currentPhotoCount = photoCount;
+            let lastImageKeywords = ''; // Store keywords of the last loaded image
+            for (let i = currentPhotoCount; i < currentPhotoCount + count; i++) {
+                if (i >= imageData.length) break; // Stop if all images are loaded
+
+                let selectedImageIndex = i; // Start with the current index
+                if (i > 0) {
+                    // Select the image with the least similarity to previous images
+                    let minSimilarity = Infinity;
+                    for (let j = i; j < imageData.length; j++) {
+                        const similarity = calculateSimilarity(imageData[j], { keywords: lastImageKeywords });
+                        if (similarity < minSimilarity) {
+                            minSimilarity = similarity;
+                            selectedImageIndex = j;
+                        }
+                    }
+                    // Swap the selected image with the current image
+                    [imageData[i], imageData[selectedImageIndex]] = [imageData[selectedImageIndex], imageData[i]];
+                }
+
+                const image = imageData[i];
+                const img = new Image();
+                img.src = `Images/${image.image}`;
+                img.alt = `${image.short_description}`;
+                img.style.width = '100%';
+                img.style.borderRadius = '8px';
+                img.style.display = 'block';
+
+                // Create gallery item
+                const item = document.createElement('div');
+                item.className = 'gallery-item';
+                item.setAttribute('data-category', image.keywords); // Use keywords as category
+                item.setAttribute('data-aos', 'fade-up');
+
+                // Append image once loaded
+                img.onload = () => {
+                    const aspectRatio = img.naturalWidth / img.naturalHeight;
+                    const fixedWidth = columns[0].clientWidth - 0; // Minus any padding/margin if needed
+                    const calculatedHeight = fixedWidth / aspectRatio;
+
+                    // Find the column with the least height
+                    const shortestColumnIndex = columnHeights.indexOf(Math.min(...columnHeights));
+
+                    // Append the image to the shortest column
+                    columns[shortestColumnIndex].appendChild(item);
+
+                    // Update the column height
+                    columnHeights[shortestColumnIndex] += calculatedHeight + 16; // 16px for gap
+                };
+
+                // Append image and overlay to gallery item
+                item.appendChild(img);
+
+                const overlay = document.createElement('div');
+                overlay.className = 'gallery-item-overlay';
+                overlay.innerHTML = `<h3>${image.short_description}</h3>`; // Only short description
+                item.appendChild(overlay);
+
+                // Lightbox functionality
+                item.addEventListener('click', () => {
+                    const lightbox = document.querySelector('.lightbox');
+                    const lightboxImg = lightbox.querySelector('img');
+                    lightboxImg.src = img.src;
+                    lightboxImg.alt = img.alt;
+                    lightbox.style.display = 'flex';
+                });
+
+                lastImageKeywords = image.keywords; // Update last image keywords
+            }
+            AOS.refresh();
+            photoCount += count;
+        }
+
+        // Initialize columns on page load
+        setupColumns();
+
+        // Fetch image data and load initial photos
+        fetchImageData().then(() => {
+            loadPhotos(photosPerLoad);
+        });
+
+        // Load more button functionality
+        loadMoreBtn.addEventListener('click', () => {
+            loadMoreBtn.disabled = true;
+            loadMoreBtn.textContent = 'Loading...';
+            // Simulate async loading
+            setTimeout(() => {
+                loadPhotos(photosPerLoad);
+                loadMoreBtn.disabled = false;
+                loadMoreBtn.textContent = 'Load More';
+            }, 2000);
+        });
+
+        // Lightbox close functionality
+        const lightbox = document.querySelector('.lightbox');
+        const lightboxClose = document.querySelector('.lightbox-close');
+        lightboxClose.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+        // Close lightbox when clicking outside the image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.getAttribute('data-category');
+                photoCount = 0;
+                setupColumns();
+                loadPhotos(photosPerLoad);
+                gallery.querySelectorAll('.gallery-item').forEach(item => {
+                    if (category === 'all' || item.getAttribute('data-category').includes(category)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Search functionality
+        const searchBar = document.querySelector('.search-bar');
+        searchBar.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            photoCount = 0;
+            setupColumns();
+            loadPhotos(photosPerLoad);
+            gallery.querySelectorAll('.gallery-item').forEach(item => {
+                const title = item.querySelector('.gallery-item-overlay h3').textContent.toLowerCase();
+                const category = item.getAttribute('data-category').toLowerCase();
+                if (title.includes(searchTerm) || category.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

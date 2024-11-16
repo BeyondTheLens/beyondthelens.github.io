@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="http://127.0.0.1:3000">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond the lens - About Us</title>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Segoe+UI&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3b413b;
+            --secondary-color: #F1FFFA;
+            --accent-color: #7a8879;
+            --text-color: #f0f0f0;
+            --bg-color: #121212;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --shadow-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .dark-mode {
+            --primary-color: #e0e0e0;
+            --secondary-color: #464E47;
+            --accent-color: #99aa9b;
+            --text-color: #e0e0e0;
+            --bg-color: #39413a;
+            --card-bg: #151815;
+            --shadow-color: rgba(0, 0, 0, 0.2);
+        }
+
+        /* Light Mode Styles */
+        .light-mode {
+            --primary-color: #464E47;
+            --secondary-color: rgba(245, 245, 245, 0.8);
+            --accent-color: #464E47;
+            --text-color: #464E47;
+            --bg-color: #fffef1;
+            --card-bg: rgba(255, 255, 241, 0.397);
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .background-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+            background: linear-gradient(45deg, #2a2a2a, #1a1a1a);
+            animation: gradientBG 20s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        header {
+            background: var(--card-bg);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px); /* For Safari */
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: var(--text-color);
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        main {
+            max-width: 800px; /* Adjusted max-width */
+            margin: 100px auto 2rem;
+            padding: 0 2rem; /* Adjusted padding */
+            text-align: center; /* Center text */
+        }
+
+        .about-section {
+            padding: 4rem 2rem; /* Adjusted padding */
+            /* Removed background and box shadow */
+        }
+
+        .about-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 2rem; /* Adjusted margin */
+        }
+
+        .about-section p {
+            text-align: justify; /* Justify text */
+            font-size: 1.1rem; /* Adjusted font size */
+            line-height: 1.9; /* Adjusted line height */
+            margin-bottom: 2rem; /* Adjusted margin */
+        }
+
+        footer {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+            color: var(--text-color);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-section {
+            flex: 1 0 250px;
+            margin-bottom: 4rem; /* Increased margin */
+        }
+
+        .footer-section h3 {
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+        }
+
+        .footer-section p {
+            line-height: 1.8;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-links a {
+            color: var(--text-color);
+            font-size: 1.8rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 0px;
+            flex-wrap: wrap;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            gap: 0px;
+            border-radius: 4px 0px 0px 4px;
+            margin-right: 0px;
+            background: var(--bg-color);
+            color: var(--text-color);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .newsletter-form button {
+            padding: 1rem 2rem;
+            background: var(--accent-color);
+            border: none;
+            border-radius: 0px 4px 4px 0px;
+            color: white;
+            cursor: pointer;
+            margin-left: 0px;
+            transition: background 0.3s ease;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .newsletter-form button:hover {
+            background: #4c554b;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-section {
+                text-align: center;
+            }
+
+            .about-section p {
+                text-align: center; /* Center text on smaller screens */
+            }
+        }
+
+        .text-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 3000;
+        }
+
+        .text-animation-content {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            animation: fadeInOut 2s ease infinite;
+        }
+
+        @keyframes fadeInOut {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-animation"></div>
+
+    <div class="text-animation">
+        <div class="text-animation-content">Beyond the lens</div>
+    </div>
+
+    <header>
+        <nav>
+            <a href="index.html" style="text-decoration: none;">
+                <div class="logo">Beyond the lens</div>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#">Gallery</a>
+                <a href="#">Blog</a>
+                <a href="about.html">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <button class="theme-toggle" aria-label="Toggle Dark Mode">
+                <i class="fas fa-sun"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section" data-aos="fade-up">
+            <h2>About Beyond The Lens</h2>
+            <p>
+                Welcome to Beyond The Lens, a premium platform showcasing the beauty and wonder of nature through the lens of cutting-edge AI technology. We curate a diverse collection of stunning images, each meticulously generated by advanced artificial intelligence algorithms. Our mission is to inspire awe and appreciation for the natural world by offering a unique perspective that transcends traditional photography. 
+            </p>
+            <p>
+                Beyond The Lens is more than just a gallery; it's a community of nature enthusiasts, photographers, and AI aficionados. We invite you to explore our collection, share your thoughts and insights, and join us on this journey of discovery. Whether you're a seasoned nature photographer or simply someone who appreciates the beauty of the natural world, Beyond The Lens offers something for everyone. Immerse yourself in the captivating imagery and let your imagination soar beyond the lens.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Beyond the lens</h3>
+                <p>Capturing moments, creating memories, and sharing stories through the lens of life.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://instagram.com/example" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com/example" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/example" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://pinterest.com/example" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form" action="https://example.com/subscribe" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Remove loading animation once content is loaded
+        window.addEventListener('load', () => {
+            document.querySelector('.text-animation').style.display = 'none';
+        });
+
+        // Theme toggle functionality
+        const themeToggle = document.querySelector('.theme-toggle');
+        let isDarkMode = false; // Track the current mode
+
+        themeToggle.addEventListener('click', () => {
+            isDarkMode = !isDarkMode; // Toggle the mode
+            document.body.classList.toggle('dark-mode');
+            document.body.classList.toggle('light-mode');
+
+            // Update the icon based on the current mode
+            if (isDarkMode) {
+                themeToggle.querySelector('i').classList.remove('fa-sun');
+                themeToggle.querySelector('i').classList.add('fa-moon');
+            } else {
+                themeToggle.querySelector('i').classList.remove('fa-moon');
+                themeToggle.querySelector('i').classList.add('fa-sun');
+            }
+        });
+    </script>
+</body>
+
+</html>
