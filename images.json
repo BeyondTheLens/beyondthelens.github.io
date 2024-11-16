@@ -1,0 +1,802 @@
+{
+  "images": [
+{
+"image": "1.png",
+"short_description": "Beach Jeep Reflection",
+"detail_description": "An orange, open-top Jeep is parked on a wet sandy beach near a pier, its reflection mirrored perfectly in the shallow water.  The Jeep has luggage tied to its roof.  A cloudy blue sky stretches overhead.",
+"keywords": "jeep beach ocean pier reflection travel adventure 4x4 vehicle"
+},
+{
+"image": "2.png",
+"short_description": "Caged Yellow Bird",
+"detail_description": "A single, small, bright yellow bird perches within a dark, ornate birdcage. The cage's bars are clearly visible, and the bird appears to be looking towards the right side of the frame.",
+"keywords": "bird yellow cage trapped nature wildlife confinement"
+},
+{
+"image": "3.png",
+"short_description": "Cougar Profile",
+"detail_description": "A cougar, also known as a mountain lion, is shown in profile view against a backdrop of lush green jungle foliage. Its body faces right, and its head is turned slightly to the viewer, its gaze focused intently on something beyond the frame. The cougar's coat is a tawny brown, and its powerful physique is evident.",
+"keywords": "cougar mountain lion jungle wildlife predator cat big cat"
+},
+{
+"image": "4.png",
+"short_description": "Night Forest Silhouette",
+"detail_description": "The silhouette of a dense coniferous forest stands out against a deep blue twilight sky.  The pointed tops of the trees form an uneven line across the middle of the image, and the sky gradually lightens from a rich dark blue at the horizon to a slightly brighter shade above the trees.  No stars or other celestial bodies are visible. The overall impression is one of quiet solitude.",
+"keywords": "forest trees night silhouette landscape nature twilight"
+},
+{
+"image": "5.png",
+"short_description": "Rainy City Muscle Car",
+"detail_description": "A powerful, modern muscle car, possibly a Dodge Challenger, dominates the foreground of this image.  It's a dark color, perhaps black or dark grey, and its headlights are brightly lit, illuminating the rainy city street. The car is angled slightly to the left.  The street is wet, reflecting the car's lights and the surrounding city lights.  The background is blurred, with streaks of light from other vehicles and streetlamps.",
+"keywords": "muscle car city rain night car vehicle street lights"
+},
+{
+"image": "6.png",
+"short_description": "Purple Shore Figure",
+"detail_description": "A lone figure, tiny in scale, stands on a shoreline where deep purple waves wash against the sand. The “Beyond the Lens” logo is overlaid in white. The water appears to glow faintly. The upper portion of the image is a darker shade of purple, creating a mystical, otherworldly ambiance.",
+"keywords": "beach ocean shore purple figure silhouette night mystical"
+},
+{
+"image": "7.png",
+"short_description": "Cherry Blossom Closeup",
+"detail_description": "A cluster of delicate cherry blossoms in various stages of bloom fills the frame.  The petals are a soft pale pink, and the branches are dark.  The background is dark and slightly blurred, emphasizing the beauty of the blossoms in the foreground.",
+"keywords": "cherry blossom flowers pink spring nature bloom close up"
+},
+{
+"image": "8.png",
+"short_description": "Kitten and Daisies",
+"detail_description": "A fluffy ginger kitten sits on a windowsill, gazing upwards at a small pot of white daisies.  The kitten's fur is a warm orange hue, and its eyes are bright.  The daisies are in full bloom, with bright yellow centers and pristine white petals.  The windowsill is light-colored, and light streams in from the window, illuminating the scene.",
+"keywords": "kitten cat daisies flowers windowsill cute pet adorable"
+},
+{
+"image": "9.png",
+"short_description": "Astronaut in Nebula",
+"detail_description": "An astronaut, clad in a white spacesuit, floats in the vast expanse of a colorful nebula.  Swirls of vibrant purple, pink, and blue gases surround the astronaut, creating a stunning backdrop.  The astronaut's visor reflects the cosmic scene. The image evokes a sense of awe and wonder at the vastness of space.",
+"keywords": "astronaut space nebula cosmos universe stars galaxy astronaut suit"
+},
+{
+"image": "10.png",
+"short_description": "Red Chair in Field",
+"detail_description": "A single, ornate red armchair sits alone in a vast, dry field under a dramatic, cloudy sky.  The chair faces toward the viewer.  The field stretches out to the horizon, and the sky is filled with dark, heavy clouds, creating a sense of solitude and perhaps foreboding.",
+"keywords": "chair red field landscape solitary sky clouds surreal"
+},
+{
+"image": "11.png",
+"short_description": "Hamster in Tiger Suit",
+"detail_description": "An adorable hamster stands on its hind legs, wearing a miniature tiger costume. The hamster's small paws are held together in front of it. The costume is bright orange with black stripes, mimicking a tiger's fur.  The background is slightly blurred, with hints of a light surface and a small, out-of-focus yellow object.",
+"keywords": "hamster tiger costume cute animal pet adorable funny"
+},
+{
+"image": "12.png",
+"short_description": "Winter Tree Sunset",
+"detail_description": "A single, bare tree stands silhouetted against a winter sunset on a snow-covered hill.  The sun, a red-orange disk, is partially obscured by a stylized horizontal line, creating a graphic effect.  The sky above the sun is a darker shade of blue.  The hill slopes gently down towards the foreground, covered in smooth, undisturbed snow.",
+"keywords": "tree winter snow sunset landscape minimalist simple art"
+},
+{
+"image": "13.png",
+"short_description": "Purple Nebula",
+"detail_description": "A luminous purple and pink nebula dominates the frame, with a single, small, silhouetted figure appearing to walk or float near the bottom. The nebula's colors swirl and blend, creating a sense of depth and movement. The figure adds a touch of mystery and scale to the vast cosmic landscape.",
+"keywords": "nebula space cosmos universe galaxy purple pink figure silhouette"
+},
+{
+"image": "14.png",
+"short_description": "Sofa in Barren Land",
+"detail_description": "A classic Chesterfield sofa, upholstered in dark red leather, sits alone in a desolate, barren landscape.  A large, imposing structure, resembling a castle or fortress, is visible in the background under a cloudy sky. The image creates a surreal and somewhat melancholic atmosphere.",
+"keywords": "sofa chesterfield desert landscape castle abandoned surreal solitary"
+},
+{
+"image": "15.png",
+"short_description": "Astronaut in Nebula",
+"detail_description": "An astronaut, in a white spacesuit, floats within a nebula filled with swirling teal and turquoise colors.  The astronaut's visor reflects the surrounding nebula. Stars are visible in the darker areas of the image. The scene conveys a sense of vastness and wonder.",
+"keywords": "astronaut space nebula cosmos universe stars galaxy turquoise"
+},
+{
+"image": "16.png",
+"short_description": "Purple Abstract",
+"detail_description": "Abstract swirls of deep purple and violet dominate the frame, creating a sense of depth and movement. A small, bright circle near the upper right edge provides a single point of contrasting light. The overall effect is one of cosmic or otherworldly beauty.",
+"keywords": "abstract purple violet background design texture cosmic"
+},
+{
+"image": "17.png",
+"short_description": "Red Chair in Field",
+"detail_description": "A red upholstered armchair stands isolated in a vast, empty field beneath a dramatic sky.  Dark, heavy clouds fill most of the sky, with a small area of lighter sky near the horizon.  The chair faces towards the viewer, its bright red color contrasting starkly with the muted tones of the field and sky. The scene evokes a sense of loneliness and contemplation.",
+"keywords": "chair red field landscape clouds sky solitary surreal"
+},
+{
+"image": "18.png",
+"short_description": "Sports Car Desert",
+"detail_description": "A sleek, modern sports car is parked on cracked, dry earth that resembles a desert landscape.  The car is dark-colored, possibly black or grey. The car faces away from the viewer, slightly angled to the right.  The background is a gradient from a light color near the horizon to a darker shade at the top, suggesting a vast, empty space.",
+"keywords": "sports car car desert landscape futuristic vehicle technology"
+},
+{
+"image": "19.png",
+"short_description": "Cat Fisherman",
+"detail_description": "A ginger cat, dressed in a traditional Japanese kimono and hat, stands in a shallow stream holding a fishing net. The cat's expression is serious and focused as it gazes into the water. Rocks and greenery line the edges of the stream, creating a serene natural setting.",
+"keywords": "cat fishing kimono japanese stream nature funny animal humor"
+},
+{
+"image": "20.png",
+"short_description": "Muscle Car Fog",
+"detail_description": "A classic American muscle car, possibly a Dodge Charger, is partially obscured by fog or mist. The car's headlights pierce through the fog, casting beams of light forward. The car is positioned on a dark road, and the “Beyond the Lens” logo is subtly incorporated into the image.",
+"keywords": "muscle car car fog night driving mystery vehicle vintage"
+},
+{
+"image": "21.png",
+"short_description": "Plane over Flowers",
+"detail_description": "A small, single-engine plane flies low over a field of vibrant yellow flowers, possibly canola or rapeseed.  The plane is in sharp focus, with its wings outstretched against the pale sky. The field of flowers extends to the horizon, creating a sea of yellow beneath the plane. The sky is bright but not intensely blue, suggesting a hazy or overcast day.",
+"keywords": "plane flying flowers yellow field landscape aerial view"
+},
+{
+"image": "22.png",
+"short_description": "Cat in Flowers",
+"detail_description": "An orange tabby cat sits amidst a field of small yellow flowers.  The cat is looking upward, seemingly intrigued by something above it. The sunlight illuminates the cat's fur, creating a warm, golden glow. The flowers surround the cat, adding a touch of natural beauty to the scene.",
+"keywords": "cat flowers orange tabby nature outdoors pet animal"
+},
+{
+"image": "23.png",
+"short_description": "Cougar Profile",
+"detail_description": "A cougar, or mountain lion, is depicted in profile against a background of lush, green foliage.  The cougar's body faces to the right, its gaze fixed on something outside the frame.  The focus is sharp on the cougar's head and shoulders, while the background is slightly blurred, highlighting the animal's presence.",
+"keywords": "cougar mountain lion wildlife predator cat big cat jungle"
+},
+{
+"image": "24.png",
+"short_description": "Rabbit in Flowers",
+"detail_description": "A brown hare sits upright in a field of bright yellow wildflowers.  The hare's ears are pointed alertly upwards, and its fur blends subtly with the colors of the field.  The flowers are densely packed, creating a carpet of yellow around the hare.  The background includes a clear blue sky, adding a touch of vibrancy to the scene.",
+"keywords": "hare rabbit wildflowers field nature wildlife animal spring"
+},
+{
+"image": "25.png",
+"short_description": "Astronaut Nebula",
+"detail_description": "This close-up image shows the side profile of an astronaut's helmet against a backdrop of vibrant purple and pink nebula clouds.  The visor reflects the colors of the nebula, and the astronaut's face is partially visible within the helmet.  The nebula clouds appear to swirl and flow, creating a sense of cosmic movement.",
+"keywords": "astronaut space nebula cosmos universe galaxy purple pink"
+},
+{
+"image": "26.png",
+"short_description": "Winter Tree",
+"detail_description": "A bare tree stands alone on a snow-covered hill beneath a minimalist sunset.  The sun is represented by a red semicircle touching a horizontal line, giving a stylized, graphic look.  The sky is a dark grey-blue.  The snow on the hill is smooth and undisturbed, emphasizing the simplicity and tranquility of the scene.",
+"keywords": "tree winter snow sunset landscape minimalist simple graphic"
+},
+{
+"image": "27.png",
+"short_description": "Cherry Blossoms",
+"detail_description": "A close-up view of delicate pink cherry blossoms.  The blossoms are in various stages of bloom, from tightly closed buds to fully opened flowers. The petals are a soft, pale pink, and the branches are dark brown. The background is dark and slightly blurred, drawing attention to the blossoms in the foreground.",
+"keywords": "cherry blossoms flowers pink spring nature bloom close-up"
+},
+{
+"image": "28.png",
+"short_description": "Enchanted Room",
+"detail_description": "This image depicts a tranquil room with a large, arched window.  Lush green plants cascade down the sides of the window, creating a sense of being immersed in nature. A comfortable-looking cushioned seat is placed near the window, bathed in the warm light streaming in.  The overall atmosphere is one of peace and enchantment.",
+"keywords": "room window plants nature light peaceful enchanted tranquil"
+},
+{
+"image": "29.png",
+"short_description": "Car in Misty Canyon",
+"detail_description": "A classic car, possibly a vintage sports car, is driving along a road through a deep, misty canyon.  The car is small in the frame, emphasizing the scale of the canyon walls. The mist creates a sense of mystery and depth. The overall impression is one of adventure and exploration.",
+"keywords": "car canyon mist fog road driving travel adventure vintage"
+},
+{
+"image": "30.png",
+"short_description": "Orange Roses Sunset",
+"detail_description": "A group of orange roses are in bloom, with a soft-focus background of a town or village at sunset.  The roses are a vibrant shade of orange, and the petals appear soft and delicate.  The warm light of the setting sun bathes the scene, creating a romantic and tranquil atmosphere.",
+"keywords": "roses orange flowers sunset landscape nature bloom garden"
+},
+{
+"image": "31.png",
+"short_description": "Glowing Ocean",
+"detail_description": "Waves gently roll onto a dark beach under a night sky filled with stars and the faint glow of the Milky Way.  The water near the shore has a bioluminescent quality, emitting a soft, otherworldly purple glow. A large moon hangs in the sky, casting a gentle light on the scene.",
+"keywords": "beach ocean night stars milky way bioluminescence moon"
+},
+{
+"image": "32.png",
+"short_description": "Astronaut with Flowers",
+"detail_description": "An astronaut, clad in a white spacesuit, stands in a field of tall grass or reeds, holding a bouquet of purple and pink flowers.  The astronaut is facing away from the viewer, looking towards a soft sunset or sunrise.  The sky is a blend of orange, pink, and purple hues, creating a peaceful and somewhat surreal scene.",
+"keywords": "astronaut space flowers field sunset sunrise nature surreal"
+},
+{
+"image": "33.png",
+"short_description": "Astronaut by Red Moon",
+"detail_description": "An astronaut is wading in shallow water near the shore, with a large, red moon dominating the sky.  Waves are gently lapping around the astronaut's legs, and the water reflects the red glow of the moon.  The scene is both surreal and serene, with the astronaut's white suit contrasting sharply against the red and dark blue tones.",
+"keywords": "astronaut moon red ocean water space surreal serene night"
+},
+{
+"image": "34.png",
+"short_description": "Astronaut with Flowers",
+"detail_description": "An astronaut stands in a field at sunrise or sunset, holding a bouquet of flowers.  The sky is a blend of pink, orange, and purple hues. The field extends to the horizon, and the astronaut's white spacesuit stands out against the natural landscape. The astronaut is facing away from the viewer, creating a sense of mystery and wonder.",
+"keywords": "astronaut space flowers field sunset sunrise nature surreal"
+},
+{
+"image": "35.png",
+"short_description": "Leopard in Jungle",
+"detail_description": "A leopard is partially hidden among dense green jungle foliage.  The leopard's face and part of its spotted body are visible. Its gaze is directed towards the right of the frame, and its expression is alert and focused. The leaves and branches surrounding the leopard create a sense of depth and camouflage.",
+"keywords": "leopard jungle wildlife big cat predator cat nature camouflage"
+},
+{
+"image": "36.png",
+"short_description": "Misty Bridge",
+"detail_description": "A simple wooden bridge spans a calm body of water, possibly a lake or river, in a foggy or misty landscape.  Bare trees line the banks of the water, their branches reaching up into the mist. The mist creates a soft, ethereal atmosphere, and the bridge seems to disappear into the fog in the distance.",
+"keywords": "bridge fog mist water landscape nature trees serene quiet"
+},
+{
+"image": "37.png",
+"short_description": "Cherry Blossom Branch",
+"detail_description": "A close-up view of a branch of cherry blossoms in bloom.  The blossoms are various shades of pink, ranging from pale pink to a deeper rose color. The petals are delicate and slightly translucent.  The background is dark and blurred, bringing the blossoms into sharp focus.",
+"keywords": "cherry blossoms flowers pink spring nature bloom close-up branch"
+},
+{
+"image": "38.png",
+"short_description": "Sofa and Castle",
+"detail_description": "A classic Chesterfield sofa, upholstered in red leather, sits in a barren, desolate landscape. In the background, a large castle or fortress is faintly visible under a cloudy sky. The sofa faces the viewer, and its vibrant red color contrasts starkly with the muted tones of the surroundings. The scene has a surreal and dreamlike quality.",
+"keywords": "sofa castle landscape surreal deserted solitary dreamlike"
+},
+{
+"image": "39.png",
+"short_description": "Red Sofa Landscape",
+"detail_description": "A red Chesterfield sofa sits alone in a barren landscape with a distant background of a large structure or building, possibly a castle or mansion.  The sofa faces the viewer.  The 'Beyond The Lens' logo is positioned to the left side of the sofa.  The scene has a surreal, dreamlike quality, juxtaposing the ordinary object of the sofa against the vast, empty landscape.",
+"keywords": "sofa landscape surreal deserted solitary dreamlike red"
+},
+{
+"image": "40.png",
+"short_description": "Spiral Staircase",
+"detail_description": "A weathered, spiral staircase winds upwards around a large, bare tree in a foggy or misty forest.  The staircase appears old and perhaps slightly rickety.  The mist creates an eerie atmosphere, and the tree's bare branches add to the sense of desolation. The staircase seems to ascend into the mist, leading to an unknown destination.",
+"keywords": "spiral staircase tree forest fog mist eerie mysterious"
+},
+{
+"image": "41.png",
+"short_description": "Leopard in Foliage",
+"detail_description": "A leopard is partially hidden in dense jungle vegetation. Its spotted coat is partially visible amidst the green leaves and branches.  The leopard's face is in profile, and its gaze is directed to the left of the frame, conveying an air of alertness and focused attention.",
+"keywords": "leopard jungle wildlife big cat predator cat nature camouflage"
+},
+{
+"image": "42.png",
+"short_description": "Astronaut with Flowers",
+"detail_description": "An astronaut, in a white spacesuit, stands in a field holding a bouquet of light purple flowers.  The astronaut is facing away from the viewer, looking towards the horizon where the sky is a soft blend of pink, orange, and yellow, suggesting a sunset or sunrise.  The field appears vast and extends to the distant horizon.",
+"keywords": "astronaut space flowers field sunset sunrise nature surreal"
+},
+{
+"image": "43.png",
+"short_description": "Wolf on Sand Dune",
+"detail_description": "A lone wolf stands atop a sand dune, silhouetted against a dramatic, cloudy sunset sky. The wolf is facing to the left, its profile clearly outlined against the warm colors of the sunset.  The sand dune slopes gently downwards, and the sky above is a mix of dark clouds and streaks of orange and yellow light.",
+"keywords": "wolf sand dune sunset silhouette landscape desert nature solitary"
+},
+{
+"image": "44.png",
+"short_description": "Snowy Tree, Red Moon",
+"detail_description": "A single, bare tree stands on a snow-covered hill beneath a large, red moon.  The moon dominates the night sky, its red glow casting a subtle light on the snow.  The tree's branches reach upwards towards the moon. The image has a simple, minimalist composition, creating a sense of quiet and solitude.",
+"keywords": "tree snow moon red night winter landscape minimalist solitary"
+},
+{
+"image": "45.png",
+"short_description": "Magnolia Blossom",
+"detail_description": "A close-up view of a single, white magnolia blossom.  The petals are delicate and slightly translucent, with subtle variations in their texture. The center of the flower is a pale yellow, and the background is dark and out of focus, drawing attention to the pure white beauty of the blossom.",
+"keywords": "magnolia flower white blossom spring nature bloom close-up"
+},
+{
+"image": "46.png",
+"short_description": "Coffee Cup Hands",
+"detail_description": "Two hands gently cradle a warm cup of coffee.  Steam rises from the cup, suggesting the coffee is freshly brewed.  The hands are illuminated by the warm light coming from the direction of the cup, and the scene creates a cozy and comforting atmosphere.",
+"keywords": "coffee cup hands warm drink cozy morning beverage"
+},
+{
+"image": "47.png",
+"short_description": "Hammock over Lake",
+"detail_description": "A hammock strung between two rocky outcrops hangs suspended over a beautiful turquoise lake. Pillows and blankets add to the hammock’s inviting appeal.  The lake is surrounded by trees and mountains, creating a tranquil and scenic vista. The image evokes a sense of relaxation and escape.",
+"keywords": "hammock lake mountains nature relaxation travel adventure scenic"
+},
+{
+"image": "48.png",
+"short_description": "Winter Tree Sunset",
+"detail_description": "A solitary tree, stripped bare of its leaves, stands on a snow-covered hill against a minimalist sunset backdrop.  The sun is depicted as a red half-circle resting on a horizontal line.  The sky above is a calm gradient of color, transitioning from a lighter shade near the horizon to a deeper hue above.  The scene is peaceful and introspective.",
+"keywords": "tree winter snow sunset landscape minimalist simple graphic"
+},
+{
+"image": "49.png",
+"short_description": "Balcony View",
+"detail_description": "A comfortable lounge chair with cushions sits on a white balcony overlooking a coastal town.  A palm tree’s fronds are visible in the foreground, adding a touch of tropical ambiance. White buildings and the blue ocean are visible in the distance.  The sky is bright blue with a few scattered clouds.  The scene evokes a sense of relaxation and vacation.",
+"keywords": "balcony view ocean coast town relaxation vacation summer"
+},
+{
+"image": "50.png",
+"short_description": "Winter Tree Sunset",
+"detail_description": "A lone cherry blossom tree stands on a snow-covered hill. The 'Beyond The Lens' logo is positioned at the base of the tree, below the horizon.  The scene is minimal and stylized, with the sun depicted as a red semicircle atop a horizon line. The sky is a gradient of colors, ranging from a lighter shade near the horizon to a deeper hue at the top.",
+"keywords": "tree winter snow sunset cherry blossom landscape minimalist graphic"
+},
+{
+"image": "51.png",
+"short_description": "Pink Roses",
+"detail_description": "A cluster of pink roses in full bloom fills the frame. The roses are a vibrant shade of pink, with soft, delicate petals.  The background is blurred, with warm, golden light suggesting a sunset or late afternoon glow. The image is focused on the beauty and texture of the roses.",
+"keywords": "roses pink flowers nature bloom garden close-up"
+},
+{
+"image": "52.png",
+"short_description": "Winter Tree",
+"detail_description": "A solitary tree stands on a snow-covered hill beneath a minimalist sunset. The sun, a bright red half-disk, sits on the horizon line, which is depicted as a thin black stripe.  The sky above the horizon line gradually deepens into a richer shade of pink.  The scene is simple and evokes a sense of peaceful solitude.",
+"keywords": "tree winter snow sunset landscape minimalist simple pink"
+},
+{
+"image": "53.png",
+"short_description": "White Roses",
+"detail_description": "Several white rose blossoms, in varying stages of opening, are shown against a backdrop of green leaves.  The roses are a pristine white, with subtle variations in the texture of their petals. The green leaves provide a natural frame for the blossoms, and the overall impression is one of purity and elegance.",
+"keywords": "roses white flowers nature bloom garden close-up elegant"
+},
+{
+"image": "54.png",
+"short_description": "Pink Roses Path",
+"detail_description": "A path lined with pink rose bushes leads towards a softly blurred background of a village or town at sunset.  The roses are a delicate shade of pink, and some are in full bloom while others are still buds.  Warm, golden light illuminates the scene, creating a romantic and inviting atmosphere.",
+"keywords": "roses pink flowers path sunset landscape village town garden"
+},
+{
+"image": "55.png",
+"short_description": "City at Night",
+"detail_description": "A figure wearing a red hooded jacket and backpack stands on a balcony or rooftop, looking out over a city at night.  The city lights are blurred, creating a bokeh effect. Rain is falling, and the atmosphere is moody and contemplative.  The figure's back is to the viewer, creating a sense of anonymity and isolation.",
+"keywords": "city night rain lights balcony rooftop figure solitary moody"
+},
+{
+"image": "56.png",
+"short_description": "Vintage Car Beach",
+"detail_description": "A classic vintage car, light green or turquoise in color, is parked on a sandy beach with palm trees in the background. The car is angled slightly towards the right, and its chrome details gleam in the soft sunlight.  The beach is empty, and the palm trees add a touch of tropical paradise to the scene.",
+"keywords": "car vintage beach palm trees tropical classic vehicle sunset"
+},
+{
+"image": "57.png",
+"short_description": "Astronaut in Nebula",
+"detail_description": "An astronaut floats in the vast expanse of a red and orange nebula. The nebula clouds swirl and mix, creating a dramatic and vibrant backdrop.  The astronaut's white spacesuit contrasts sharply against the colors of the nebula.  The scene evokes a sense of wonder and the immensity of space.",
+"keywords": "astronaut space nebula cosmos universe galaxy red orange"
+},
+{
+"image": "58.png",
+"short_description": "Donkey on Toilet",
+"detail_description": "A donkey, wearing glasses, is sitting on a toilet reading a newspaper.  The donkey's expression is serious and focused on the newspaper.  The headline on the newspaper reads, “A Will Make Take Your Job.” The scene is humorous and satirical, commenting on the anxieties surrounding automation and job displacement.",
+"keywords": "donkey toilet newspaper humor satire funny animals jobs"
+},
+{
+"image": "59.png",
+"short_description": "Cherry Blossoms",
+"detail_description": "A branch of cherry blossoms in bloom fills the frame. The blossoms are a delicate shade of pink, and the petals appear soft and slightly translucent. The background is dark and blurred, bringing the blossoms into sharp focus.  The image captures the ephemeral beauty of spring.",
+"keywords": "cherry blossoms flowers pink spring nature bloom close-up"
+},
+{
+"image": "60.png",
+"short_description": "Balcony View",
+"detail_description": "A wicker chaise lounge sits on a white balcony, offering a view of white buildings and distant mountains. A palm tree is visible in the foreground, adding a tropical touch. The scene is bright and sunny, evoking a sense of relaxation and vacation.  The balcony has a patterned tile floor and a white railing.",
+"keywords": "balcony view ocean coast mountains relaxation vacation summer"
+},
+{
+"image": "61.png",
+"short_description": "Hamster in Tiger Suit",
+"detail_description": "A small hamster, dressed in a miniature tiger costume, stands on a light-colored surface. The hamster's paws are held close to its body, and it appears to be looking towards the left of the frame.  Small, out-of-focus yellow objects, possibly flowers or toy balls, are visible in the background.",
+"keywords": "hamster tiger costume cute animal pet adorable funny"
+},
+{
+"image": "62.png",
+"short_description": "Balcony with Chair",
+"detail_description": "A wicker chair sits on a balcony overlooking a coastal town.  The balcony has white railings and a tiled floor.  White buildings and palm trees are visible in the distance, and the sky is a clear blue.  The scene is bright and sunny, evoking a sense of relaxation and vacation.",
+"keywords": "balcony chair wicker view ocean coast town relaxation vacation"
+},
+{
+"image": "63.png",
+"short_description": "Balcony Lounge Chair",
+"detail_description": "A wicker chaise lounge sits on a balcony with a view of a coastal town.  The chaise lounge has cushions and is angled towards the view. Palm trees and white buildings are visible in the distance, and the sky is a bright blue.  The scene is peaceful and inviting, ideal for relaxation.",
+"keywords": "balcony lounge chair wicker view ocean coast town relaxation"
+},
+{
+"image": "64.png",
+"short_description": "Beach Jeep Reflection",
+"detail_description": "An orange Jeep is parked on a wet beach with a pier in the background, its reflection clearly visible in the shallow water.  The Jeep has luggage strapped to its roof.  The sky is a mix of blue and white clouds, and birds are flying near the pier.  The scene evokes a sense of adventure and travel.",
+"keywords": "jeep beach ocean pier reflection travel adventure 4x4 vehicle"
+},
+{
+"image": "65.png",
+"short_description": "Rose in City",
+"detail_description": "A single red rose grows from a crack in the pavement in a dark, futuristic city. Green neon lights illuminate the buildings and street, creating a cyberpunk aesthetic. The rose stands out with its vibrant red color against the dark background, symbolizing a touch of nature amidst the urban environment.",
+"keywords": "rose city cyberpunk futuristic neon green red contrast flower"
+},
+{
+"image": "66.png",
+"short_description": "Magical Purple Beach",
+"detail_description": "A vibrant, magical beach scene with glowing purple sand and water.  Small, sparkling lights dot the shoreline, adding to the enchanting atmosphere.  The sky is a blend of purple and pink hues, and the overall impression is one of fantasy and wonder.",
+"keywords": "beach purple sand ocean lights night magical fantasy"
+},
+{
+"image": "67.png",
+"short_description": "Car on Cracked Earth",
+"detail_description": "A futuristic, dark-colored car is parked on a surface of cracked, dry earth.  The car is sleek and low to the ground, with a futuristic design.  The background is a gradient of light and dark tones, suggesting a vast, empty landscape.",
+"keywords": "car futuristic desert landscape vehicle technology design"
+},
+{
+"image": "68.png",
+"short_description": "Beach Jeep",
+"detail_description": "An orange Jeep with luggage on its roof is parked on a wet, sandy beach near a pier, its reflection visible in the shallow water.  The sky is a mix of blue and white clouds, and the scene evokes a sense of adventure and exploration.  The pier extends out into the ocean in the background.",
+"keywords": "jeep beach ocean pier reflection travel adventure vehicle"
+},
+{
+"image": "69.png",
+"short_description": "Coffee Cup Hands",
+"detail_description": "Two hands hold a white coffee cup, with steam gently rising.  The hands are positioned on a wooden surface, and the lighting suggests a cozy indoor setting.  The focus is on the warmth and comfort of the coffee.",
+"keywords": "coffee cup hands warm drink cozy morning beverage"
+},
+{
+"image": "70.png",
+"short_description": "Jeep by Pier",
+"detail_description": "An orange Jeep is parked on a wet sandy area near a pier, with its reflection visible in the water.  The Jeep has luggage or gear on its roof rack.  The sky is bright, with some clouds, and the scene suggests a coastal or beach setting.",
+"keywords": "jeep beach pier ocean reflection travel adventure vehicle"
+},
+{
+"image": "71.png",
+"short_description": "Stylish Cat",
+"detail_description": "A ginger tabby cat is dressed in a stylish brown turtleneck sweater and a matching overcoat.  The cat is wearing round eyeglasses and is looking upwards with an inquisitive expression. The background is dark, highlighting the cat's attire and features.",
+"keywords": "cat fashion style glasses turtleneck sweater coat pet animal"
+},
+{
+"image": "72.png",
+"short_description": "Cherry Blossoms Building",
+"detail_description": "Pink cherry blossoms in full bloom frame a traditional East Asian style building, likely in Korea.  The blossoms are a delicate pale pink, and the building's roof is visible through the branches.  The scene is vibrant and celebrates the beauty of spring.",
+"keywords": "cherry blossoms flowers pink spring nature bloom building korea"
+},
+{
+"image": "73.png",
+"short_description": "Cat in Coat",
+"detail_description": "A fluffy ginger cat, wearing round eyeglasses and a stylish brown turtleneck sweater and overcoat, looks directly at the viewer. The cat's expression is slightly grumpy or disdainful. The background is dark and out of focus, highlighting the cat's attire and expression.",
+"keywords": "cat fashion style glasses turtleneck sweater coat pet animal"
+},
+{
+"image": "74.png",
+"short_description": "Red Chair in Field",
+"detail_description": "A single red armchair stands alone in a vast, barren field under a cloudy sky. The chair faces the viewer, its vibrant red contrasting with the muted tones of the field and sky.  The sky is filled with dark, dramatic clouds, creating a sense of solitude and perhaps even foreboding.",
+"keywords": "chair red field landscape clouds sky solitary surreal"
+},
+{
+"image": "75.png",
+"short_description": "Bird in Cage",
+"detail_description": "A small yellow bird is perched inside an ornate, antique-looking birdcage.  The cage is made of dark metal with intricate details. The bird is facing towards the right of the frame, and its feathers are a bright, cheerful yellow. The background is dark and slightly blurred, focusing attention on the bird and cage.",
+"keywords": "bird yellow cage trapped nature wildlife confinement antique"
+},
+{
+"image": "76.png",
+"short_description": "Winter Tree",
+"detail_description": "A single, bare tree stands on a snow-covered hill against a stylized sunset backdrop.  The sun is represented by a red semicircle positioned on the horizon line, which is a thin black stripe. The sky transitions from a light pink near the horizon to a deeper pink above. The image has a simple, minimalist aesthetic.",
+"keywords": "tree winter snow sunset landscape minimalist simple graphic pink"
+},
+{
+"image": "77.png",
+"short_description": "Playground in Fog",
+"detail_description": "A children's playground, partially obscured by fog or mist, stands in a wooded area.  The playground equipment is dark and somewhat indistinct in the fog.  The trees surrounding the playground are also obscured by the mist.  The overall atmosphere is eerie and mysterious.",
+"keywords": "playground fog mist trees woods eerie mysterious abandoned"
+},
+{
+"image": "78.png",
+"short_description": "Cherry Blossoms",
+"detail_description": "A close-up view of pink cherry blossoms. Several blossoms are in focus, with delicate pink petals and dark stems.  The background is dark and blurred, making the blossoms stand out. The image celebrates the beauty and fragility of nature.",
+"keywords": "cherry blossoms flowers pink spring nature bloom close-up"
+},
+{
+"image": "79.png",
+"short_description": "Vintage Car with Flowers",
+"detail_description": "A vintage or antique car, possibly from the 1920s or 1930s, is parked on a road near some flowering bushes. The car is a light beige or tan color, and the flowers are white or very light pink. The background is a soft pastel sky, suggesting a sunrise or sunset. The scene is peaceful and evokes a nostalgic feeling.",
+"keywords": "car vintage antique flowers road sunset sunrise nostalgic"
+},
+{
+"image": "80.png",
+"short_description": "Purple Abstract",
+"detail_description": "Abstract swirls and patterns in shades of purple and violet dominate the image.  A lighter, almost iridescent, purple line curves through the center.  The design suggests movement and depth.  The background is dark, enhancing the vibrancy of the purple hues.",
+"keywords": "abstract purple violet background design texture pattern"
+},
+{
+"image": "81.png",
+"short_description": "Purple Abstract",
+"detail_description": "Wavy, abstract lines and patterns in shades of purple and violet create a sense of flowing movement.  The background is dark, allowing the purple hues to stand out. The overall effect is one of fluidity and dynamic energy.",
+"keywords": "abstract purple violet background design texture pattern fluid"
+},
+{
+"image": "82.png",
+"short_description": "Muscle Car in Rain",
+"detail_description": "A powerful muscle car, possibly a Dodge Challenger, is parked on a rain-slicked city street at night.  The car's headlights are illuminated, and the red glow of its taillights is reflected in the wet pavement. The background is blurred with streaks of light from other vehicles and city lights.  The overall impression is one of power and urban energy.",
+"keywords": "muscle car city rain night car vehicle street lights red"
+},
+{
+"image": "83.png",
+"short_description": "Muscle Car in Desert",
+"detail_description": "A modern muscle car speeds across a desert landscape, kicking up red dust or sand in its wake. The car is dark in color, and the desert landscape is a mix of red and orange tones. The sky is cloudy and dramatic, adding to the sense of speed and power.",
+"keywords": "muscle car desert car driving speed landscape dust vehicle"
+},
+{
+"image": "84.png",
+"short_description": "Astronaut in Water",
+"detail_description": "An astronaut in a white spacesuit is partially submerged in water, possibly near the shore of an ocean or sea.  A large, orange-red moon hangs low in the sky, reflecting in the water's surface.  Waves are crashing around the astronaut, creating a dynamic and somewhat surreal scene.",
+"keywords": "astronaut moon water ocean space surreal night red orange"
+},
+{
+"image": "85.png",
+"short_description": "Plane over Mountains",
+"detail_description": "A small airplane is flying above snow-covered mountains and a winding river.  The plane is small in the frame, emphasizing the vastness of the landscape below.  The river snakes through the valleys between the mountains, its path clearly visible against the white snow. The sky is a light blue with some clouds.",
+"keywords": "plane mountains snow river flying aerial view landscape travel"
+},
+{
+"image": "86.png",
+"short_description": "Plane at Sunset",
+"detail_description": "A small airplane is silhouetted against a vibrant sunset sky.  The plane is in the upper part of the frame, and its wings are outstretched.  The sky is a gradient of colors, ranging from a deep orange near the horizon to a lighter yellow and pink above.  The 'Beyond the Lens' logo is incorporated into the image.",
+"keywords": "plane sunset silhouette flying aerial view landscape travel"
+},
+{
+"image": "87.png",
+"short_description": "Tree on Snowy Hill",
+"detail_description": "A lone tree stands on a snow-covered hill beneath a red moon. The moon is large and prominent in the sky, its red glow casting a soft light on the snow.  The scene is minimalist and evokes a sense of tranquility and solitude.",
+"keywords": "tree snow hill moon red night winter landscape minimalist"
+},
+{
+"image": "88.png",
+"short_description": "Rose in City",
+"detail_description": "A single red rose grows from a crack in the pavement in a dark, futuristic cityscape. Green neon lights illuminate the buildings and street. The rose's vibrant red color contrasts sharply with the dark surroundings and the green neon, creating a visually striking image.",
+"keywords": "rose city cyberpunk futuristic neon green red contrast flower"
+},
+{
+"image": "89.png",
+"short_description": "Jeep Reflection",
+"detail_description": "An orange Jeep with luggage on its roof is parked on a wet beach or near a body of water, with its reflection clearly visible.  A pier or bridge is visible in the background.  The scene suggests a coastal or beach setting, perfect for adventure and exploration.",
+"keywords": "jeep beach ocean pier reflection travel adventure vehicle 4x4"
+},
+{
+"image": "90.png",
+"short_description": "Car on Cliff",
+"detail_description": "A classic American muscle car, possibly a Dodge Charger, is perched precariously on the edge of a cliff, with smoke billowing from its tires. The car is angled towards the edge, creating a sense of drama and danger. The landscape below is a vast expanse of mountains or hills, adding to the sense of scale and precariousness.",
+"keywords": "car cliff edge danger risk muscle car landscape adventure"
+},
+{
+"image": "91.png",
+"short_description": "Glowing Beach",
+"detail_description": "Waves crash onto a dark beach at night, illuminated by a bioluminescent glow.  The water near the shore emits a soft, ethereal blue and purple light. Stars are visible in the night sky above, and the scene has a magical, otherworldly quality.",
+"keywords": "beach ocean night bioluminescence waves stars magical landscape"
+},
+{
+"image": "92.png",
+"short_description": "Skull and Helmet",
+"detail_description": "A human skull and a military helmet lie on the ground in a dark forest.  The scene is eerie and suggests a past conflict or tragedy.  Leaves and debris are scattered on the forest floor, adding to the sense of decay and abandonment.",
+"keywords": "skull helmet forest death war military eerie abandoned"
+},
+{
+"image": "93.png",
+"short_description": "Reading Nook",
+"detail_description": "A cozy reading nook is nestled within a room with a large, arched window.  A comfortable-looking seat or bench is placed near the window, surrounded by books and plants.  Sunlight streams through the window, illuminating the scene and creating a peaceful atmosphere.",
+"keywords": "reading nook window books plants cozy room peaceful relaxing"
+},
+{
+"image": "94.png",
+"short_description": "Plane and Buildings",
+"detail_description": "A plane is flying over a city, with tall buildings below. The image is manipulated to create a symmetrical effect, with the buildings appearing to converge towards the center of the frame where the plane is located.  The overall impression is one of geometrical precision and urban density.",
+"keywords": "plane city buildings flying aerial view symmetrical urban"
+},
+{
+"image": "95.png",
+"short_description": "Bee on Flowers",
+"detail_description": "A large bumblebee is covered in pollen as it gathers nectar from a cluster of small purple flowers. The bee is in sharp focus, and its furry body and delicate wings are clearly visible. The flowers are densely packed, providing a rich source of pollen and nectar.",
+"keywords": "bee bumblebee flowers pollen nectar nature insect pollinator"
+},
+{
+"image": "96.png",
+"short_description": "Astronaut in Space",
+"detail_description": "An astronaut floats in the vastness of space, surrounded by swirling clouds of red and orange nebula gas. The astronaut's white spacesuit contrasts with the vibrant colors of the nebula.  The image evokes a sense of awe and the immensity of the universe.",
+"keywords": "astronaut space nebula cosmos universe galaxy red orange"
+},
+{
+"image": "97.png",
+"short_description": "Red Moon Landscape",
+"detail_description": "A large, red moon hangs low in the sky over a dark landscape.  Bare trees are silhouetted against the red glow of the moon, and the scene has a mysterious and otherworldly quality.  The overall composition is simple, emphasizing the contrast between the red moon and the dark landscape.",
+"keywords": "moon red landscape trees night sky mysterious otherworldly"
+},
+{
+"image": "98.png",
+"short_description": "Jeep by Pier",
+"detail_description": "An orange Jeep with luggage on its roof is parked near a pier on a wet, sandy beach or near a body of water, its reflection prominent in the water's surface.  The pier extends out into the water, and the sky is a mix of blue and white clouds.  The scene suggests a coastal vacation or adventure.",
+"keywords": "jeep beach ocean pier reflection travel adventure vehicle"
+},
+{
+"image": "99.png",
+"short_description": "Astronaut and Red Moon",
+"detail_description": "An astronaut, in a white spacesuit, stands in shallow water near the shore, with a large red moon in the sky above.  Waves are gently lapping around the astronaut's legs.  The scene is surreal and dramatic, with the red moon casting a glow on the water.",
+"keywords": "astronaut moon red ocean water space surreal night"
+},
+{
+"image": "100.png",
+"short_description": "Coffee in Hands",
+"detail_description": "Two hands are wrapped around a warm mug, presumably containing coffee or another hot beverage. Steam rises gently from the mug.  The background is blurred and appears to be a wooden surface, suggesting a cozy indoor setting.",
+"keywords": "coffee mug hands warm drink cozy morning beverage"
+},
+{
+"image": "101.png",
+"short_description": "UFO in Forest",
+"detail_description": "A classic flying saucer-shaped UFO hovers above a dark forest, emitting a bright green beam of light downwards. The light illuminates the trees below, creating an eerie and mysterious atmosphere. The UFO is the focal point of the image, and the forest provides a dramatic backdrop.",
+"keywords": "ufo alien spaceship forest night light mysterious sci-fi"
+},
+{
+"image": "102.png",
+"short_description": "Astronaut in Nebula",
+"detail_description": "An astronaut, wearing a white spacesuit, is depicted floating in a nebula. The nebula is a mix of blue, purple, and pink hues, creating a vibrant and otherworldly backdrop.  The astronaut's visor reflects the surrounding nebula.  The scene evokes the vastness and beauty of space.",
+"keywords": "astronaut space nebula cosmos universe galaxy blue purple pink"
+},
+{
+"image": "103.png",
+"short_description": "Dog in Cap",
+"detail_description": "A fluffy, light brown dog, possibly a Cockapoo or similar breed, wears a green baseball cap and matching jacket. The dog is looking directly at the viewer with a friendly expression. The background is a neutral grey, which highlights the dog and its attire.",
+"keywords": "dog cap jacket pet animal cute fluffy cockapoo portrait"
+},
+{
+"image": "104.png",
+"short_description": "Astronaut by Orange Moon",
+"detail_description": "An astronaut, in a white spacesuit, stands in shallow water with waves gently lapping around their legs. A large, orange moon hangs low in the sky, casting a warm glow on the water. The scene is tranquil yet surreal, with the vastness of the ocean and sky emphasizing the astronaut's solitary presence.",
+"keywords": "astronaut moon ocean water space surreal night orange"
+},
+{
+"image": "105.png",
+"short_description": "Balcony with Lounge Chair",
+"detail_description": "A wicker lounge chair with cushions sits on a balcony overlooking a coastal town or village. Palm trees and white buildings are visible in the distance, and the ocean can be seen in the background. The scene is bright and sunny, evoking a sense of relaxation and vacation.",
+"keywords": "balcony lounge chair wicker ocean coast town relaxation vacation"
+},
+{
+"image": "106.png",
+"short_description": "Tree on Hill",
+"detail_description": "A single tree stands on a snow-covered hill against a minimalist, stylized backdrop.  The sun is depicted as a red half-circle resting on a thin black horizon line. The sky transitions from a pale pink near the horizon to a darker shade above.  The scene is simple and peaceful.",
+"keywords": "tree snow hill minimalist landscape sunset winter simple graphic"
+},
+{
+"image": "107.png",
+"short_description": "Plane over Forest",
+"detail_description": "A small airplane is flying low over a dense forest.  The plane is angled slightly downwards, as if preparing to land.  The forest below is a mix of green and brown tones, suggesting a mix of tree types. The sky is a soft blue with some scattered clouds.  The overall impression is one of tranquility and the beauty of nature.",
+"keywords": "plane forest flying aerial view landscape travel nature trees"
+},
+{
+"image": "108.png",
+"short_description": "Sunset with Contrail",
+"detail_description": "A vibrant sunset fills the sky with shades of orange, yellow, and red. A white contrail from a plane stretches across the sky, adding a touch of human presence to the natural beauty of the sunset. The 'Beyond The Lens' logo is subtly integrated into the image.",
+"keywords": "sunset sky contrail plane clouds landscape nature travel"
+},
+{
+"image": "109.png",
+"short_description": "Wolf Portrait",
+"detail_description": "A close-up portrait of a wolf's head. The wolf's fur is a mix of grey, brown, and black, and its eyes are a piercing yellow or amber color.  The background is dark and out of focus, with some soft, circular bokeh lights visible, perhaps indicating a nighttime setting.",
+"keywords": "wolf portrait animal wildlife canine predator nature close-up"
+},
+{
+"image": "110.png",
+"short_description": "Rose in City",
+"detail_description": "A single red rose grows from a crack in the pavement in a dark, futuristic city.  The city is illuminated by green neon lights, creating a cyberpunk aesthetic.  Fallen rose petals lie scattered around the base of the rose. The scene juxtaposes nature and urban decay.",
+"keywords": "rose city cyberpunk futuristic neon green red contrast flower decay"
+},
+{
+"image": "111.png",
+"short_description": "Purple Abstract",
+"detail_description": "Abstract flowing lines and patterns in shades of purple and violet create a sense of movement and depth. The background is dark, enhancing the vibrancy of the purple hues.  The design is modern and stylish, suggesting a digital or technological theme.",
+"keywords": "abstract purple violet background design texture pattern fluid"
+},
+{
+"image": "112.png",
+"short_description": "Astronaut in Nebula",
+"detail_description": "An astronaut floats in the vastness of space, surrounded by a swirling red and pink nebula. The astronaut's white spacesuit contrasts starkly with the colorful nebula clouds.  The scene conveys a sense of awe and the immensity of the cosmos.",
+"keywords": "astronaut space nebula cosmos universe galaxy red pink"
+},
+{
+"image": "113.png",
+"short_description": "Raccoon in Jacket",
+"detail_description": "A raccoon, wearing a stylish orange and blue jacket and sunglasses, stares directly at the viewer.  The raccoon's expression is cool and collected.  The background is dark and out of focus, emphasizing the raccoon and its attire.",
+"keywords": "raccoon animal sunglasses jacket cool stylish portrait fashion"
+},
+{
+"image": "114.png",
+"short_description": "Astronaut, Orange Moon",
+"detail_description": "An astronaut, clad in a white spacesuit, is wading in water near a shore, with a large orange moon in the sky.  Waves are breaking gently around the astronaut's legs, and the water reflects the orange glow of the moon.  The scene is both serene and surreal.",
+"keywords": "astronaut moon ocean water space surreal night orange serene"
+},
+{
+"image": "115.png",
+"short_description": "Car in Desert",
+"detail_description": "A sleek, modern sports car is parked on cracked, dry earth, possibly a desert landscape.  The car is dark colored, perhaps black or grey, and its design is futuristic and angular.  The background is a gradient of lighter and darker tones, suggesting a vast, empty space.",
+"keywords": "sports car car desert landscape futuristic vehicle technology design"
+},
+{
+"image": "116.png",
+"short_description": "Squirrel in Snow",
+"detail_description": "A red squirrel stands on its hind legs in the snow.  The squirrel's fur is a rich reddish-brown, and its bushy tail curves upwards behind it.  The snow is clean and white, creating a stark contrast with the squirrel's fur.  The background is blurred, likely more snow-covered ground or trees.",
+"keywords": "squirrel snow winter animal wildlife nature rodent red"
+},
+{
+"image": "117.png",
+"short_description": "Pink Beach, Figure",
+"detail_description": "A solitary figure stands on a beach with vibrant pink sand and water.  The 'Beyond The Lens' logo is superimposed on the scene.  The water appears to glow with an otherworldly light.  The figure is small in scale, emphasizing the vastness of the beach and the magical atmosphere.",
+"keywords": "beach pink sand ocean figure silhouette night magical"
+},
+{
+"image": "118.png",
+"short_description": "Misty Forest Path",
+"detail_description": "A wooden walkway or bridge extends into a foggy forest. The walkway is made of wooden planks, and the path leads straight into the dense fog, creating a sense of mystery and the unknown.  The trees on either side of the walkway are shrouded in mist, adding to the ethereal atmosphere.",
+"keywords": "forest path fog mist walkway trees nature mysterious eerie"
+},
+{
+"image": "119.png",
+"short_description": "Dark Forest Path",
+"detail_description": "A narrow path leads through a dark, dense forest.  Tall trees line the path, their branches interwoven overhead, blocking out much of the light.  The path appears to lead to a brighter area in the distance, creating a sense of intrigue and the unknown.  Silhouettes, possibly of people, are faintly visible in the distance.",
+"keywords": "forest path dark trees mysterious eerie night silhouettes"
+},
+{
+"image": "120.png",
+"short_description": "Red Moon over Water",
+"detail_description": "A large, red moon hangs low in the sky over a body of water.  The water reflects the red glow of the moon, creating a dramatic and otherworldly effect.  Trees are silhouetted against the moonlit sky. The scene is peaceful yet imbued with a sense of mystery.",
+"keywords": "moon red water reflection landscape night sky trees mysterious"
+},
+{
+"image": "121.png",
+"short_description": "Astronaut and Moon",
+"detail_description": "An astronaut, in a white spacesuit, stands in shallow water near the shore, facing a large, bright moon hanging low in the sky.  Waves are gently breaking around the astronaut's legs.  The moon's reflection is visible in the water, creating a tranquil and surreal scene.",
+"keywords": "astronaut moon ocean water space surreal night serene"
+},
+{
+"image": "122.png",
+"short_description": "Purple Nebula",
+"detail_description": "Abstract waves and patterns in shades of purple, pink, and violet create a sense of cosmic movement and energy.  The design is fluid and dynamic, resembling nebula clouds or other celestial phenomena. The background is dark, allowing the vibrant colors to stand out.",
+"keywords": "abstract purple pink violet nebula space cosmos universe"
+},
+{
+"image": "123.png",
+"short_description": "Rose in City",
+"detail_description": "A single red rose grows from a crack in the pavement in a dark, futuristic city. The city is illuminated by green neon lights, creating a cyberpunk aesthetic.  A shoe or boot is visible in the lower left corner, adding a human element to the scene.",
+"keywords": "rose city cyberpunk futuristic neon green red contrast flower shoe"
+},
+{
+"image": "124.png",
+"short_description": "Bird in Cage",
+"detail_description": "A small bird is perched inside a decorative birdcage.  The bird's feathers are a mix of brown and grey. The cage is ornate and antique-looking, with a dark metal frame.  The background is dark and slightly blurred, focusing attention on the bird and cage.",
+"keywords": "bird cage trapped nature wildlife confinement antique birdcage"
+},
+{
+"image": "125.png",
+"short_description": "Car on Cracked Earth",
+"detail_description": "A vintage-style car is parked on a surface of cracked, dry earth or desert landscape.  The car is a light color, and its design suggests it is a retro or futuristic model.  The background is a hazy or misty, creating a sense of mystery and isolation.",
+"keywords": "car vintage retro futuristic desert landscape vehicle isolated"
+},
+{
+"image": "126.png",
+"short_description": "Red Planet",
+"detail_description": "A large red planet, possibly Mars or a similar celestial body, dominates the sky, its surface visible in detail.  The planet reflects in a body of water below, creating a dramatic and otherworldly landscape.  The scene is both beautiful and awe-inspiring.",
+"keywords": "planet red space mars landscape reflection water otherworldly"
+},
+{
+"image": "127.png",
+"short_description": "Rose in City",
+"detail_description": "A single red rose grows from a crack in the pavement in a futuristic city lit by green neon lights.  The scene is a stark juxtaposition of nature and urban decay, with the vibrant red of the rose standing out against the dark, gritty background and the artificial green glow.",
+"keywords": "rose city cyberpunk futuristic neon green red contrast flower decay"
+},
+{
+"image": "128.png",
+"short_description": "Tiger in Rain",
+"detail_description": "A powerful tiger is depicted in the rain, its head turned towards the viewer with a fierce expression. Rain streaks down its face and fur.  The tiger's stripes are clearly visible, and its eyes are intense. The background is dark and blurred, focusing all attention on the tiger.",
+"keywords": "tiger rain wildlife predator animal big cat nature fierce"
+},
+{
+"image": "129.png",
+"short_description": "Tiger Drawing",
+"detail_description": "A black and white drawing or painting of a tiger.  The tiger appears to be roaring or snarling, and its stripes are rendered with detail.  The style is somewhat abstract, with splashes or streaks of ink or paint adding to the dynamic energy of the image.",
+"keywords": "tiger drawing painting black white art abstract animal"
+},
+{
+"image": "130.png",
+"short_description": "Car in Desert",
+"detail_description": "A dark-colored muscle car speeds through a desert landscape, kicking up reddish dust or sand in its wake. The car is in motion, and the blurred background conveys a sense of speed.  The sky is bright and somewhat cloudy, suggesting a daytime scene.",
+"keywords": "muscle car car desert speed driving landscape dust vehicle"
+},
+{
+"image": "131.png",
+"short_description": "Snowy Tree, Moon",
+"detail_description": "A single tree stands on a snow-covered hill beneath a large, full moon. The tree is bare of leaves, its branches reaching up towards the moon. The scene is serene and minimalist, with the moon's light casting a soft glow on the snow.",
+"keywords": "tree snow hill moon night winter landscape minimalist serene"
+},
+{
+"image": "132.png",
+"short_description": "Winter Tree, Red Moon",
+"detail_description": "A single, leafless tree stands on a snow-covered hill against a backdrop of a large, red moon.  The moon's red glow casts a subtle light on the snow, and the tree's branches reach upwards. The scene is simple and evokes a sense of quiet solitude and winter's chill.",
+"keywords": "tree snow hill moon red night winter landscape minimalist"
+},
+{
+"image": "133.png",
+"short_description": "Purple Shore",
+"detail_description": "The “Beyond The Lens” logo is placed above a person standing on a beach, where deep purple waves wash against the sand.  The water appears to glow faintly. The upper portion of the image is a darker shade of purple, creating a mystical ambiance.",
+"keywords": "beach ocean shore purple silhouette night mystical"
+}
+]
+}

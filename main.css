@@ -1,0 +1,601 @@
+/* Existing CSS */
+:root {
+    --primary-color: #3b413b;
+    --secondary-color: #F1FFFA;
+    --accent-color: #7a8879;
+    --text-color: #f0f0f0;
+    --bg-color: #121212;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --card-bg-deep: rgba(20, 20, 20, 0.5);
+    --shadow-color: rgba(255, 255, 255, 0.1);
+    --nav-bar-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    --primary-color: #e0e0e0;
+    --secondary-color: #464E47;
+    --accent-color: #99aa9b;
+    --text-color: #e0e0e0;
+    --bg-color: #39413a;
+    --card-bg: #151815;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --nav-bar-color: rgba(0, 0, 0, 0.9);
+    --card-bg-deep: rgba(20, 20, 20, 0.5);
+}
+
+/* Light Mode Styles */
+.light-mode {
+    --primary-color: #464E47;
+    --secondary-color: rgba(245, 245, 245, 0.8);
+    --accent-color: #464E47;
+    --text-color: #464E47;
+    --bg-color: #fffef1;
+    --card-bg: rgba(255, 255, 241, 0.397);
+    --card-bg-deep: rgba(255, 255, 241, 0.5);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --nav-bar-color: rgba(255, 253, 235, 0.9);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    background: linear-gradient(45deg, #2a2a2a, #1a1a1a);
+    animation: gradientBG 20s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    background: var(--card-bg);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 100px auto 2rem;
+    padding: 0 1rem;
+}
+
+.filters {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.filter-btn {
+    padding: 0.8rem 1.5rem;
+    background: var(--card-bg);
+    border: none;
+    border-radius: 25px;
+    color: var(--text-color);
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+    margin: 0.2rem;
+}
+
+.filter-btn:hover {
+    transform: translateY(-2px);
+}
+
+.search-bar {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    border-radius: 25px;
+    background: var(--card-bg);
+    color: var(--text-color);
+    backdrop-filter: blur(5px);
+}
+
+.gallery {
+    display: flex;
+    gap: 1rem;
+}
+
+.gallery-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    background: var(--card-bg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px var(--shadow-color);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.gallery-item-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    padding: 1rem;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-item-overlay {
+    opacity: 1;
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.lightbox-content {
+    display: flex;
+    align-items: stretch;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.lightbox img {
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    max-height: 80vh; /* Ensure image doesn't exceed container height */
+    width: auto;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto; 
+}
+
+.lightbox-details {
+    background-color: var(--card-bg-deep);
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 8px;
+    width: 30%; /* Adjust width as needed */
+    height: auto; /* Let height adjust to content */
+    overflow-y: auto;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.lightbox-title {
+    color: var(--accent-color);
+    margin-bottom: 10px;
+    font-size: 1.2em; /* Slightly larger title */
+}
+
+.lightbox-description {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.6; /* Improve readability */
+}
+
+.download-btn {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #4c554b;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.load-more-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.load-more-btn {
+    padding: 0.8rem 2rem;
+    background: var(--accent-color);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.load-more-btn:hover {
+    background: #4c554b;
+}
+
+footer {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    padding: 3rem 2rem;
+    margin-top: 4rem;
+    color: var(--text-color);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 0 250px;
+    margin-bottom: 4rem;
+}
+
+.footer-section h3 {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.footer-section p {
+    line-height: 1.8;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-links a {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 0px;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    gap: 0px;
+    border-radius: 4px 0px 0px 4px;
+    margin-right: 0px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-form button {
+    padding: 1rem 2rem;
+    background: var(--accent-color);
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    color: white;
+    cursor: pointer;
+    margin-left: 0px;
+    transition: background 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-form button:hover {
+    background: #4c554b;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .gallery {
+        gap: 0.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .gallery {
+        gap: 0.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Hide the original theme toggle in header */
+    header .theme-toggle {
+        display: none;
+    }
+
+    .desktop-nav.active {
+        background: var(--nav-bar-color); /* Increased opacity for mobile navbar */
+    }
+
+    nav {
+        flex-direction: row; /* Align items horizontally */
+        align-items: center; /* Center vertically */
+        padding-left: 0px;
+        padding-right: 0px;
+        justify-content: space-around; /* Distribute space between */
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery-column {
+        width: 100%;
+    }
+
+    .nav-links.desktop-nav {
+        display: none;
+    }
+
+    .filters, /* Hide filters on mobile/tablet */
+    .filters.active {
+        display: none;
+    }
+
+
+    main {
+        margin-top: 100px; /* Adjust margin for mobile */
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .lightbox-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lightbox img {
+        max-width: 90%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .lightbox-details {
+        width: 90%;
+        height: auto;
+    }
+
+    /* Mobile Navigation */
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 1.8rem;
+        color: var(--text-color);
+        margin-left: 1rem; /* Add spacing to the left of the icon */
+    }
+
+    .desktop-nav.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+        box-shadow: 0 4px 6px var(--shadow-color);
+        transform: translateY(0);
+        transition: transform 0.3s ease;
+        z-index: 1001;
+    }
+
+    .desktop-nav.active a {
+        padding: 0.8rem 0;
+        border-bottom: 1px solid var(--shadow-color);
+    }
+
+    .desktop-nav.active a:last-child {
+        border-bottom: none;
+    }
+
+    .desktop-nav.active .theme-toggle, /* Theme toggle inside mobile nav */
+    .desktop-nav.active .search-bar {
+        margin-bottom: 1rem;
+        width: 100%;
+        order: 1; /* Place these at the top */
+    }
+
+    /* Add theme toggle to mobile nav */
+    .desktop-nav.active {
+        display: flex;
+        flex-direction: column;
+    }
+    .desktop-nav.active .theme-toggle-mobile { /* New theme toggle for mobile */
+        background: none;
+        border: none;
+        color: var(--text-color);
+        cursor: pointer;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        order: 0; /* Place at the very top */
+        align-self: flex-end; /* Align to the right */
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .filters { /* Show filters on larger screens */
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery-column {
+        width: 100%;
+    }
+}
+
+.text-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+}
+
+.text-animation-content {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: fadeInOut 2s ease infinite;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
