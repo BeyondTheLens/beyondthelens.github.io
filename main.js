@@ -33,7 +33,7 @@ themeToggle.addEventListener('click', () => {
 const gallery = document.querySelector('.gallery');
 const loadMoreBtn = document.querySelector('.load-more-btn');
 let photoCount = 0;
-const photosPerLoad = 25;
+const photosPerLoad = 35;
 let imageData = []; // Store image data from JSON
 let loadedImages = []; // Store indices of loaded images
 
